@@ -19,9 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight.Companion.Bold
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+@Preview(showBackground = true)
 @Composable
 fun ScrollableGalleryScreen()
 {
@@ -73,7 +75,7 @@ fun GalleryCell() {
                     .fillMaxWidth()
                     .background(Color.White)
                     .padding(start = 4.dp)
-                    .align(Alignment.BottomStart)
+                    .align(Alignment.TopStart)
             )
             Text(
                 text = "$12.99",
